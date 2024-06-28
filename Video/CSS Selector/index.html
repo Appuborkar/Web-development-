@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    
+    <style>
+
+        /* Element Selector */
+        div{
+            background-color: red;
+        }
+
+        /* class selector */
+        .c{
+            color: blue;
+        }
+
+        /* id selector */
+        #d{
+           color: red;
+           background-color: aqua;
+        }
+
+        /* Universal selector */
+        * {
+            margin: 0%;
+            padding: 0cap;
+            text-align: center;
+        }
+
+        /* child selector */
+        div >h1{
+            color: rgb(62, 226, 98);
+            background-color: black;
+        }
+
+        /* Descent selector */
+       div h2 {
+        color:chartreuse;
+        background-color: rgb(163, 25, 78);
+
+        }
+        
+        /*Pseudo Selector*/
+        a:visited{
+            color:rgb(49, 231, 12)
+        }
+
+        a:link{
+            color:rgb(110, 6, 79)
+        }
+
+        /* It shows background color after we oint cursor to it */
+        a:hover{
+            background-color:blue;
+        }
+
+        /* Aftre clicking on link it will reflect with given color */
+        a:active{
+            background-color: chartreuse;
+        }
+
+        p:first-child{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>I am UPSC aspirant</p>
+    </div>
+
+    <div class="c">
+        <p>I am UPSC aspirant</p>
+    </div>
+    
+    <main id="d">
+        <p>The impossible word always says I am possble</p>
+    </main>
+
+    <div>
+        <h1>This is child Selector</h1>
+    </div>
+   
+    <div>
+        <h2>This is child Selector</h2>
+    </div>
+
+    <div>
+        <h2>This is child Selector</h2>
+    </div>
+
+    <a href="https://google.com">Go to google</a>
+    <a href="https://Facebook.com">Go to Facebook</a>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box model</title>
+    <style>
+        /* *{
+            padding:0;
+            margin:0;
+        } */
+        .box{
+            background-color: aqua;
+        }
+        .box1{
+            color: red;
+            padding:5px;
+            margin: 10px;
+            border: 2px solid blue;
+            box-sizing: border-box; /*This combines the the padding, border size If the height is given as 100 It combines it including padding ,border and gives the combine height (inspect the page and show the result to get accurate result or info)*/
+            height: 100px;
+            
+        }
+        .box2{
+            color: rgb(21, 7, 150);
+            padding:10px;
+            margin: 10px;
+            border: 2px solid black;
+            box-sizing: border-box;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- When the margin of the 2 element is same then it margin gets collapse -->
+
+    <div class="box box1">This is Box 1</div><!--We can add multiple classes for an element-->
+    <div class="box box2">This is Box 2</div>
+</body>
+</html>
