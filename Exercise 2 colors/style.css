@@ -1,0 +1,9 @@
+.c >p:first-child{
+    color:red ;
+    font-size:larger;
+    background-color:yellow;
+}
+.c{
+    color:rgb(244, 244, 245);
+    background-color:rgb(11, 30, 199);
+}
